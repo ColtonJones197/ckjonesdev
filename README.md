@@ -1,2 +1,2 @@
-<h3>CK Jones Devsite</h3>
-This was created so that I could familiarize myself with a few parts of the web development process.
+<h3>Smash is hard</h3>
+This is a blog that I created to try to document the difficulties of mastering the popular games of the super smash brothers franchise.

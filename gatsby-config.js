@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `I'm CK Jones`,
+    title: `Smash is Hard`,
     author: {
-      name: `Colton Jones`,
+      name: `CK Jones`,
       summary: `Who lives and works in Manhattan KS`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A documentation of the difficulties of learning to play the good games within the super smash brothers franchise.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
       twitter: `cksbadtakes`,
