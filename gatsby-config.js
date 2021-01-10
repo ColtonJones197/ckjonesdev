@@ -80,7 +80,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-theme-ui`,
       options: {
-        preset: "theme-ui/preset-funk"
+        preset: "theme-ui/preset-deep"
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
