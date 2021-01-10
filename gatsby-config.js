@@ -76,6 +76,13 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-theme-ui`,
+    {
+      resolve: `gatsby-plugin-theme-ui`,
+      options: {
+        preset: "theme-ui/preset-deep"
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
