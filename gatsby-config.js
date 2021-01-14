@@ -83,6 +83,10 @@ module.exports = {
         preset: "theme-ui/preset-deep"
       }
     },
+    `gatsby-plugin-twitter`,
+    {
+      resolve: `gatsby-plugin-twitter`,
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

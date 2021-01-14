@@ -7,6 +7,8 @@ description: "People debate over talent vs skill too often and here's why."
 ###### Of the many topics smashers regularly debate about, talent vs skill is the one that pisses me off the most.
 It happens every few months. Some high level player makes the claim that talent is this immutable thing that some people have and some people don't and that's it. You'll reach your physical limit of smash brothers and will never get even better. This is bullshit and I think a lot of the things people say about it are just excuses.
 
+<blockquote class="twitter-tweet" align="center"><p lang="ja" dir="ltr">ボリューム多めな記事書きました。頭を使って考えて対戦したい方に捧ぐ。<br><br>対戦攻略記事「頭を使って対戦する」ってどういうこと？｜aMSa🎮 <a href="https://twitter.com/aMSaRedyoshi?ref_src=twsrc%5Etfw">@aMSaRedyoshi</a> <a href="https://twitter.com/hashtag/note?src=hash&amp;ref_src=twsrc%5Etfw">#note</a> <a href="https://t.co/n1FsuKYdYv">https://t.co/n1FsuKYdYv</a></p>&mdash; aMSa🎮 (@aMSaRedyoshi) <a href="https://twitter.com/aMSaRedyoshi/status/1349659259789737985?ref_src=twsrc%5Etfw">January 14, 2021</a></blockquote>
+
 ##### __Innate talent isn't why you're going 2-2 at every weekly.__
 
 Not seeing work pay off sucks and it's easy to see why people blame that on things that are out of their control. Reaction time, intelligence, and just god-given video game skill are all things I've heard people list as reasons for why they will never improve beyond where they currently are. I could spend some time [breaking down why genetic reaction speed doesn't really apply to smash](https://www.youtube.com/watch?v=cyaSRrZrPwY) and could also break down the other two, but I think the best combatant to this argument is Captain Faceroll.
