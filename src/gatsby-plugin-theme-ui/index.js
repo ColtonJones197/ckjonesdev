@@ -40,7 +40,7 @@ export default
   colors: {
     text: '#ffffff',
     background: '#363a60',
-    primary: '#74a6cb',
+    primary: '#ff66df',
     secondary: '#8e6ef4',
     muted: '#d4d4d4'
   },
@@ -127,6 +127,12 @@ export default
     },
     img: {
       maxWidth: '100%'
-    }
+    },
+    blockquote: {
+      color: 'inherit'
+    },
+    quote: {
+      color: 'inherit'
+    },
   }
 }

@@ -79,9 +79,6 @@ module.exports = {
     `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-plugin-theme-ui`,
-      options: {
-        preset: "theme-ui/preset-deep"
-      }
     },
     `gatsby-plugin-twitter`,
     {

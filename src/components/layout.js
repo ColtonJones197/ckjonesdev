@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-
 import { rhythm, scale } from "../utils/typography"
 import { Navbar, NavbarBrand, NavItem, NavLink, NavbarToggler, Collapse, Nav } from "reactstrap"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -34,7 +34,7 @@ const Layout = ({ location, title, children }) => {
   } else {
     header = (
       <div>
-      <Navbar color="faded" light expand="md">
+      <Navbar light expand="md">
         <NavbarBrand href="/">CKJones</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

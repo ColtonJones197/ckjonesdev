@@ -29,7 +29,14 @@ const BlogIndex = ({ data, location }) => {
                 }}
               >
                 <Link
-                  style={{ boxShadow: `none` }}
+                  activeClassName='active'
+                  sx={{
+                    color: 'inherit',
+                    '&.active': {
+                      color: 'primary',
+                    }
+                  }}
+                  style={{boxShadow: 'none', color: '#ff66df'}}
                   to={node.fields.slug}
                   itemProp="url"
                 >
