@@ -129,10 +129,10 @@ export default
       maxWidth: '100%'
     },
     blockquote: {
-      color: 'inherit'
+      color: 'text'
     },
     quote: {
-      color: 'inherit'
+      color: 'primary'
     },
   }
 }
