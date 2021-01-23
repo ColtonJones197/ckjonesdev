@@ -6,9 +6,9 @@ module.exports = {
       summary: `Who lives and works in Manhattan KS`,
     },
     description: `A documentation of the difficulties of learning to play the good games within the super smash brothers franchise.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://www.smashishard.com/`,
     social: {
-      twitter: `cksbadtakes`,
+      twitter: `kreethdotcom`,
     },
   },
   plugins: [
