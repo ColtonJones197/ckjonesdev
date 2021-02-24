@@ -76,13 +76,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-theme-ui`,
-    {
-      resolve: `gatsby-plugin-theme-ui`,
-      options: {
-        preset: "theme-ui/preset-deep"
-      }
-    },
     `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-twitter`,
