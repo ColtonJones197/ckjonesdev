@@ -1,8 +1,8 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react";
+import { Link } from "gatsby";
 
-import { rhythm, scale } from "../utils/typography"
-import { Navbar, NavbarBrand, NavItem, NavLink, NavbarToggler, Collapse, Nav } from "reactstrap"
+import { rhythm, scale } from "../utils/typography";
+import {Menu, MenuItem, MenuHeader} from "semantic-ui-react";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -33,22 +33,12 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <div>
-      <Navbar color="faded" light expand="md">
-        <NavbarBrand href="/">CKJones</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/">Blog</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/">About</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-      </div>
+      <Menu size="large" fixed="top" className="ui four item menu">
+        <MenuItem href="/" header={true} link={true} icon={true}>B</MenuItem>
+        <MenuItem href="/" link={true}>Smash Is Hard</MenuItem>
+        <MenuItem>About</MenuItem>
+        <MenuItem>Blog</MenuItem>
+      </Menu>
     )
   }
   return (
@@ -63,9 +53,7 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        
       </footer>
     </div>
   )

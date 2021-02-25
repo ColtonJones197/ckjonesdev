@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
-import Fade from "reactstrap/lib/Fade"
 import SEO from "./seo"
 
 const Intro = () => {
@@ -16,7 +15,7 @@ const Intro = () => {
       fontSize: 18,
     }}>
       <SEO title="Intro"/>
-      <Fade in={true} tag="p" className="mt-0">But so am I. I'm CK Jones and I will be documenting my journey through the good smash games of the Super Smash Brothers IP and maybe some other stuff.</Fade>
+      <div>But so am I. I'm CK Jones and I will be documenting my journey through the good smash games of the Super Smash Brothers IP and maybe some other stuff.</div>
     </div>
   )
 }
