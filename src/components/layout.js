@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
 
 import { rhythm, scale } from "../utils/typography";
-import {Menu, MenuItem, MenuHeader} from "semantic-ui-react";
+import {Grid, GridColumn, GridRow, Icon, Menu, MenuItem} from "semantic-ui-react";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
-  
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
 
   if (location.pathname === rootPath) {
     header = (
@@ -33,11 +30,10 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Menu size="large" fixed="top" className="ui four item menu">
-        <MenuItem href="/" header={true} link={true} icon={true}>B</MenuItem>
-        <MenuItem href="/" link={true}>Smash Is Hard</MenuItem>
+      <Menu fixed='top' stackable={true} size="huge" className="ui five item menu">
+        <MenuItem position='left' href="/" link={true}><b>Smash Is Hard</b></MenuItem>
         <MenuItem>About</MenuItem>
-        <MenuItem>Blog</MenuItem>
+        <MenuItem position='right'>Blog</MenuItem>
       </Menu>
     )
   }
@@ -53,7 +49,25 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        
+        <div className="ui inverted vertical footer segment sticky">
+          <Grid stretched={true} centered={true}>
+            <GridRow>
+              <GridColumn>
+                <Icon name="large discord" link={true}></Icon>
+              </GridColumn>
+              <GridColumn>
+                <Icon name="large twitter" link={true}></Icon>
+              </GridColumn>
+              <GridColumn>
+                <Icon name='large youtube' link={true}></Icon>
+              </GridColumn>
+            </GridRow>
+            <GridRow>
+                  <Icon name='large envelope'></Icon>
+                  <span>Suggestions? Contact me <a href='mailto:colton.jones197@gmail.com'>via email</a> or any of the social media above.</span>
+            </GridRow>
+          </Grid>
+        </div>
       </footer>
     </div>
   )

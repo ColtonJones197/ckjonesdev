@@ -6,18 +6,20 @@ import { rhythm } from "../utils/typography"
 import Intro from "../components/intro";
 import 'semantic-ui-css/semantic.min.css';
 import "../css/app.global.scss";
+import {GridRow, Grid} from "semantic-ui-react";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Intro />
+      <Grid padded='vertically'>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
+          <GridRow>
           <article
             key={node.fields.slug}
             itemScope
@@ -48,8 +50,10 @@ const BlogIndex = ({ data, location }) => {
               />
             </section>
           </article>
+          </GridRow>
         )
       })}
+      </Grid>
     </Layout>
   )
 }
