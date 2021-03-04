@@ -1,9 +1,4 @@
-import { graphql } from "gatsby"
-import React from "react"
-
-import Layout from "./layout"
-import SEO from "./seo"
-import { rhythm } from "../utils/typography"
+import React from "react";
 
 
 class AuthorCard extends React.Component{
@@ -13,7 +8,7 @@ class AuthorCard extends React.Component{
     
     render() 
     {
-      //console.log(this.state.name);
+      
       return (
         <div className="card">
           <div className="content">
