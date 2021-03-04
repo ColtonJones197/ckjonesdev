@@ -13,8 +13,14 @@ a:hover {
     color: $text-highlight;
 }
 
-h1 {
-    font-family: 'Montserrat';
+h1, h2 {
+    font-family: 'Montserrat' !important;
+    color: $text-primary !important;
+}
+
+.author-header {
+    display: flex;
+    justify-content: center;
 }
 
 //color was breaking on quote text in blog posts, so this was needed
@@ -22,6 +28,16 @@ blockquote {
     color: inherit;
 }
 
-footer {
-    color: rgb(70, 70, 70);
+.gray-background {
+    background-color: #2e2e2e !important;
+}
+
+.title-divider {
+    color: $text-primary;
+    background-color: $text-primary;
+    height: .15em;
+}
+
+.author-card {
+    background-color: white;
 }

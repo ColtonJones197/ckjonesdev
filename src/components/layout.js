@@ -15,6 +15,7 @@ const Layout = ({ location, title, children }) => {
           ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
+          textAlign: "center",
         }}
       >
         <Link
@@ -30,9 +31,9 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Menu fixed='top' stackable={true} size="huge" className="ui five item menu">
+      <Menu fixed='top' stackable={true} size="huge" className="ui inverted borderless five item menu">
         <MenuItem position='left' href="/" link={true}><b>Smash Is Hard</b></MenuItem>
-        <MenuItem>About</MenuItem>
+        <MenuItem href='/authors'>Authors</MenuItem>
         <MenuItem position='right'>Blog</MenuItem>
       </Menu>
     )
@@ -42,7 +43,7 @@ const Layout = ({ location, title, children }) => {
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
+        maxWidth: rhythm(30),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
