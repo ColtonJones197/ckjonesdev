@@ -16,6 +16,7 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" />
       <Intro />
       <Grid padded='vertically'>
+      <GridRow><h2 className="ui header ">Recent Articles</h2></GridRow>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -53,6 +54,9 @@ const BlogIndex = ({ data, location }) => {
           </GridRow>
         )
       })}
+        <GridRow>
+
+        </GridRow>
       </Grid>
     </Layout>
   )
@@ -67,7 +71,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC}
+    	filter: {fileAbsolutePath: {regex: "/blog/"}}
+    ) {
       edges {
         node {
           excerpt
