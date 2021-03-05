@@ -19,6 +19,7 @@ module.exports = {
         name: `blog`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,6 +48,13 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-embed-youtube`,
+            options: {
+              width: 700,
+              height: 350
             },
           },
           `gatsby-remark-prismjs`,
