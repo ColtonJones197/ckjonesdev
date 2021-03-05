@@ -9,7 +9,7 @@ const Intro = () => {
       marginLeft: `auto`,
       marginRight: `auto`,
       maxWidth: rhythm(26),
-      padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+      padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
       fontSize: 18,
     }}>
       <SEO title="Intro"/>
