@@ -17,7 +17,7 @@ const AboutPage = ({data}) => {
       }}>
           <h1 className="author-header">Meet the Authors</h1>
         <hr className="title-divider"></hr>
-        <div className="ui cards">
+        <div className="card-layout ui cards">
         {
           authors.map(({node}) => {
             return (
@@ -47,7 +47,7 @@ export const pageQuery = graphql`
       title
     }
   }
-  allMarkdownRemark(sort: {fields: [frontmatter___priority], order: DESC}, filter: {fileAbsolutePath: {regex: "/authors/"}}) {
+  allMarkdownRemark(sort: {fields: [frontmatter___priority], order: ASC}, filter: {fileAbsolutePath: {regex: "/authors/"}}) {
     edges {
       node {
         html

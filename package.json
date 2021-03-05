@@ -2,7 +2,7 @@
   "name": "smash-is-hard",
   "private": true,
   "description": "A smash blog by Colton Jones",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Colton Jones <colton.jones197@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
